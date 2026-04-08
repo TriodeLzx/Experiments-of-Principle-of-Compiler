@@ -1,0 +1,8 @@
+N: S A C D
+T: a
+P:
+S -> a A | C
+A -> a
+C -> D
+D -> C
+START: S

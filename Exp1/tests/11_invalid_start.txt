@@ -1,0 +1,5 @@
+N: A B
+T: a b
+P:
+A -> a
+START: S

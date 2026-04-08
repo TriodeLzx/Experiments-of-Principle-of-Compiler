@@ -1,0 +1,10 @@
+N: S B C
+T: a b c
+P:
+S -> a S B C | a B C
+C B -> B C
+a B -> a b
+b B -> b b
+b C -> b c
+c C -> c c
+START: S

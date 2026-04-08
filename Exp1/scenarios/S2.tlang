@@ -1,0 +1,19 @@
+fn scope_shadow_demo(n:int) -> int:
+	int x = n
+	int y = 0
+
+	if x > 0:
+		int x = x + 10
+		y = x
+
+		while y < 40:
+			int x = y + 1
+			y = x + 5
+
+	int out = x + y
+	ret out
+
+fn main() -> int:
+	int input = 5
+	int result = scope_shadow_demo(input)
+	ret result

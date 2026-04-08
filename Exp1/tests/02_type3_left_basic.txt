@@ -1,0 +1,7 @@
+N: S A B
+T: 0 1
+P:
+S -> A 0 | B 1 | ε
+A -> S 0 | 1
+B -> B 1 | 0
+START: S

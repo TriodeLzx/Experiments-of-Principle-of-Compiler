@@ -1,0 +1,254 @@
+<program> ::= <toplevel_list>
+
+<toplevel_list> ::= <toplevel> <toplevel_list>
+                  | E
+
+<toplevel> ::= <function_def>
+             | <statement>
+
+<function_def> ::= "fn" <identifier> "(" <opt_param_list> ")" <opt_return_type> ":" <suite>
+
+<opt_return_type> ::= "->" <type>
+                    | E
+
+<opt_param_list> ::= <param_list>
+                   | E
+
+<param_list> ::= <param> <param_list_tail>
+
+<param_list_tail> ::= "," <param> <param_list_tail>
+                    | E
+
+<param> ::= <identifier> ":" <type>
+
+<suite> ::= <simple_stmt> <NEWLINE>
+          | <NEWLINE> <INDENT> <statement_list> <DEDENT>
+
+<statement_list> ::= <statement> <statement_list>
+                   | E
+
+<statement> ::= <simple_stmt> <NEWLINE>
+              | <if_statement>
+              | <while_statement>
+              | <for_statement>
+
+<simple_stmt> ::= <var_decl>
+                | <assignment>
+                | <return_statement>
+                | <expr>
+
+<var_decl> ::= <type> <declarator> <declarator_tail>
+
+<declarator_tail> ::= "," <declarator> <declarator_tail>
+                    | E
+
+<declarator> ::= <identifier> <opt_init>
+
+<opt_init> ::= "=" <expr>
+             | E
+
+<assignment> ::= <lvalue> "=" <expr>
+
+<lvalue> ::= <identifier> <lvalue_tail>
+
+<lvalue_tail> ::= "[" <expr> "]" <lvalue_tail>
+                | E
+
+<if_statement> ::= "if" <expr> ":" <suite> <elif_chain> <opt_else>
+
+<elif_chain> ::= "elif" <expr> ":" <suite> <elif_chain>
+               | E
+
+<opt_else> ::= "else" ":" <suite>
+             | E
+
+<while_statement> ::= "while" <expr> ":" <suite>
+
+<for_statement> ::= "for" <identifier> "=" <expr> "," <expr> <opt_for_step> ":" <suite>
+
+<opt_for_step> ::= "," <expr>
+                 | E
+
+<return_statement> ::= "ret" <opt_expr>
+
+<opt_expr> ::= <expr>
+             | E
+
+<expr> ::= <logical_or_expr>
+
+<logical_or_expr> ::= <logical_and_expr> <logical_or_tail>
+
+<logical_or_tail> ::= "or" <logical_and_expr> <logical_or_tail>
+                    | E
+
+<logical_and_expr> ::= <bitwise_or_expr> <logical_and_tail>
+
+<logical_and_tail> ::= "and" <bitwise_or_expr> <logical_and_tail>
+                     | E
+
+<bitwise_or_expr> ::= <bitwise_xor_expr> <bitwise_or_tail>
+
+<bitwise_or_tail> ::= "|" <bitwise_xor_expr> <bitwise_or_tail>
+                    | E
+
+<bitwise_xor_expr> ::= <bitwise_and_expr> <bitwise_xor_tail>
+
+<bitwise_xor_tail> ::= "^" <bitwise_and_expr> <bitwise_xor_tail>
+                     | E
+
+<bitwise_and_expr> ::= <equality_expr> <bitwise_and_tail>
+
+<bitwise_and_tail> ::= "&" <equality_expr> <bitwise_and_tail>
+                     | E
+
+<equality_expr> ::= <relational_expr> <equality_tail>
+
+<equality_tail> ::= "==" <relational_expr> <equality_tail>
+                  | "!=" <relational_expr> <equality_tail>
+                  | E
+
+<relational_expr> ::= <shift_expr> <relational_tail>
+
+<relational_tail> ::= "<" <shift_expr> <relational_tail>
+                    | ">" <shift_expr> <relational_tail>
+                    | "<=" <shift_expr> <relational_tail>
+                    | ">=" <shift_expr> <relational_tail>
+                    | E
+
+<shift_expr> ::= <additive_expr> <shift_tail>
+
+<shift_tail> ::= "<<" <additive_expr> <shift_tail>
+               | ">>" <additive_expr> <shift_tail>
+               | E
+
+<additive_expr> ::= <multiplicative_expr> <additive_tail>
+
+<additive_tail> ::= "+" <multiplicative_expr> <additive_tail>
+                  | "-" <multiplicative_expr> <additive_tail>
+                  | E
+
+<multiplicative_expr> ::= <unary_expr> <multiplicative_tail>
+
+<multiplicative_tail> ::= "*" <unary_expr> <multiplicative_tail>
+                        | "/" <unary_expr> <multiplicative_tail>
+                        | "%" <unary_expr> <multiplicative_tail>
+                        | E
+
+<unary_expr> ::= "+" <unary_expr>
+               | "-" <unary_expr>
+               | "~" <unary_expr>
+               | "not" <unary_expr>
+               | <postfix_expr>
+
+<postfix_expr> ::= <primary_expr> <postfix_tail>
+
+<postfix_tail> ::= <postfix_op> <postfix_tail>
+                 | E
+
+<postfix_op> ::= "(" <opt_arg_list> ")"
+               | "[" <expr> "]"
+
+<opt_arg_list> ::= <arg_list>
+                 | E
+
+<arg_list> ::= <expr> <arg_list_tail>
+
+<arg_list_tail> ::= "," <expr> <arg_list_tail>
+                  | E
+
+<primary_expr> ::= <integer_literal>
+                 | <float_literal>
+                 | <string_literal>
+                 | <boolean_literal>
+                 | <identifier>
+                 | <array_literal>
+                 | "(" <expr> ")"
+
+<array_literal> ::= "[" <opt_expr_list> "]"
+
+<opt_expr_list> ::= <expr_list>
+                  | E
+
+<expr_list> ::= <expr> <expr_list_tail>
+
+<expr_list_tail> ::= "," <expr> <expr_list_tail>
+                   | E
+
+<type> ::= <base_type> <type_suffix>
+
+<type_suffix> ::= "[" "]" <type_suffix>
+                | E
+
+<base_type> ::= "int"
+              | "bool"
+              | "float"
+              | "str"
+
+<identifier> ::= <LETTER_OR_UNDERSCORE> <identifier_tail>
+
+<identifier_tail> ::= <LETTER_OR_DIGIT_OR_UNDERSCORE> <identifier_tail>
+                    | E
+
+<integer_literal> ::= "0"
+                    | <signed_nonzero_integer>
+
+<signed_nonzero_integer> ::= "-" <unsigned_nonzero_integer>
+                           | <unsigned_nonzero_integer>
+
+<unsigned_nonzero_integer> ::= <NON_ZERO_DIGIT> <digit_tail>
+
+<digit_tail> ::= <DIGIT> <digit_tail>
+               | E
+
+<float_literal> ::= <opt_minus> <DIGIT_SEQ> "." <DIGIT_SEQ>
+
+<opt_minus> ::= "-"
+              | E
+
+<string_literal> ::= "\"" <string_char_seq> "\""
+
+<string_char_seq> ::= <string_char> <string_char_seq>
+                    | E
+
+<string_char> ::= <CHAR_NO_QUOTE_OR_BACKSLASH>
+                | <escape_sequence>
+
+<boolean_literal> ::= "true"
+                    | "false"
+
+<comment> ::= "#" <comment_tail>
+
+<comment_tail> ::= <ANY_CHAR_EXCEPT_NEWLINE> <comment_tail>
+                 | E
+
+<DIGIT_SEQ> ::= <DIGIT> <digit_tail>
+
+<DIGIT> ::= "0" | <NON_ZERO_DIGIT>
+
+<NON_ZERO_DIGIT> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+<LETTER_OR_UNDERSCORE> ::= <LETTER>
+                         | "_"
+
+<LETTER_OR_DIGIT_OR_UNDERSCORE> ::= <LETTER>
+                                   | <DIGIT>
+                                   | "_"
+
+<LETTER> ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
+           | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+           | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M"
+           | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z"
+
+<escape_sequence> ::= "\\" <ANY_CHAR>
+
+<NEWLINE> ::= "NEWLINE"
+
+<INDENT> ::= "INDENT"
+
+<DEDENT> ::= "DEDENT"
+
+<ANY_CHAR_EXCEPT_NEWLINE> ::= "ANY_CHAR_EXCEPT_NEWLINE"
+
+<CHAR_NO_QUOTE_OR_BACKSLASH> ::= "CHAR_NO_QUOTE_OR_BACKSLASH"
+
+<ANY_CHAR> ::= "ANY_CHAR"

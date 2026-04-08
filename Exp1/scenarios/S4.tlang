@@ -1,0 +1,29 @@
+fn nested_control_demo(limit:int) -> int:
+	int total = 0
+	int i = 0
+
+	while i < limit:
+		if i % 2 == 0:
+			int j = 0
+			while j < i + 1:
+				if j == 2:
+					int k = 0
+					while k < 3:
+						total = total + i + j + k
+						k = k + 1
+				else:
+					for t = 0, 3, 1:
+						total = total + t
+				j = j + 1
+		else:
+			for m = 0, i, 1:
+				if m > 1:
+					total = total + m
+
+		i = i + 1
+
+	ret total
+
+fn main() -> int:
+	int answer = nested_control_demo(6)
+	ret answer

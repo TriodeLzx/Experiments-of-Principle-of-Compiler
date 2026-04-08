@@ -1,0 +1,14 @@
+fn lexical_error_demo() -> int:
+	int x = 10
+	int y = 2
+	int z = x @ y
+	ret z
+
+fn syntax_error_demo(n:int) -> int
+	if n > 0:
+		ret n
+	ret 0
+
+fn semantic_error_demo() -> int:
+	int x = "hello"
+	ret x

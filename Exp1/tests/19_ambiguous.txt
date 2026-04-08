@@ -1,0 +1,5 @@
+N: E
+T: n + *
+P:
+E -> E + E | E * E | n | ε
+START: E

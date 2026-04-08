@@ -1,0 +1,4 @@
+T: a b
+P:
+S -> a
+START: S

@@ -1,0 +1,8 @@
+N: S A B C
+T: a
+P:
+S -> A
+A -> B
+B -> C
+C -> ε
+START: S

@@ -1,0 +1,10 @@
+# This is a comment
+N:   S    A
+T: a
+P:
+
+S    ->    a    A
+# another comment
+A->ε 
+
+START:   S  

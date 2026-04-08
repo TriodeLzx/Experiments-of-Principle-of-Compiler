@@ -1,0 +1,6 @@
+N: S A
+T: a b
+P:
+S -> ε | a A S
+A S -> a b
+START: S
