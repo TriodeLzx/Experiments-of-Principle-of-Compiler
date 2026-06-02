@@ -1,0 +1,9 @@
+{
+  "tokens": [
+    {"type": "ID", "value": "x", "line": 2, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 2, "col": 3},
+    {"type": "NUM", "value": "1", "line": 2, "col": 5},
+    {"type": "EOF", "value": "", "line": 3, "col": 1}
+  ],
+  "errors": []
+}

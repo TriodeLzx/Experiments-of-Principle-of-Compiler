@@ -1,0 +1,12 @@
+{
+  "tokens": [
+    {"type": "ID", "value": "s", "line": 1, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 1, "col": 3},
+    {"type": "STR", "value": "\"hello\\nworld\\t\\\"x\\\"\\\\\"", "line": 1, "col": 5},
+    {"type": "ID", "value": "t", "line": 2, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 2, "col": 3},
+    {"type": "STR", "value": "\"\"", "line": 2, "col": 5},
+    {"type": "EOF", "value": "", "line": 3, "col": 1}
+  ],
+  "errors": []
+}

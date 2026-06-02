@@ -1,0 +1,31 @@
+{
+  "tokens": [
+    {"type": "ID", "value": "a", "line": 1, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 1, "col": 3},
+    {"type": "ID", "value": "b", "line": 2, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 2, "col": 3},
+    {"type": "ID", "value": "c", "line": 3, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 3, "col": 3},
+    {"type": "ID", "value": "d", "line": 4, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 4, "col": 3},
+    {"type": "ID", "value": "e", "line": 5, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 5, "col": 3},
+    {"type": "ID", "value": "f", "line": 6, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 6, "col": 3},
+    {"type": "ID", "value": "g", "line": 7, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 7, "col": 3},
+    {"type": "ID", "value": "h", "line": 8, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 8, "col": 3},
+    {"type": "EOF", "value": "", "line": 9, "col": 1}
+  ],
+  "errors": [
+    {"type": "INVALID_NUMBER", "value": "3.14.15", "line": 1, "col": 5},
+    {"type": "INVALID_NUMBER", "value": "1e", "line": 2, "col": 5},
+    {"type": "INVALID_NUMBER", "value": ".5", "line": 3, "col": 5},
+    {"type": "INVALID_NUMBER", "value": "00", "line": 4, "col": 5},
+    {"type": "INVALID_NUMBER", "value": "1_", "line": 5, "col": 5},
+    {"type": "INVALID_NUMBER", "value": "1.", "line": 6, "col": 5},
+    {"type": "INVALID_NUMBER", "value": "-.5", "line": 7, "col": 5},
+    {"type": "INVALID_NUMBER", "value": "-0", "line": 8, "col": 5}
+  ]
+}

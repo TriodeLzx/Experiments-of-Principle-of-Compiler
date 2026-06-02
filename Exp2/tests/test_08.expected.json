@@ -1,0 +1,19 @@
+{
+  "tokens": [
+    {"type": "ID", "value": "a", "line": 1, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 1, "col": 3},
+    {"type": "ID", "value": "b", "line": 2, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 2, "col": 3},
+    {"type": "NUM", "value": "1", "line": 2, "col": 5},
+    {"type": "ID", "value": "c", "line": 3, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 3, "col": 3},
+    {"type": "ID", "value": "d", "line": 4, "col": 1},
+    {"type": "ASSIGN", "value": "=", "line": 4, "col": 3},
+    {"type": "NUM", "value": "2", "line": 4, "col": 5},
+    {"type": "EOF", "value": "", "line": 5, "col": 1}
+  ],
+  "errors": [
+    {"type": "UNCLOSED_STRING", "value": "\"hello", "line": 1, "col": 5},
+    {"type": "UNCLOSED_STRING", "value": "\"world", "line": 3, "col": 5}
+  ]
+}

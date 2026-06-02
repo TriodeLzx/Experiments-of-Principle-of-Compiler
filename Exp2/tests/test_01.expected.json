@@ -1,0 +1,10 @@
+{
+  "tokens": [
+    {"type": "KEYWORD", "value": "if", "line": 1, "col": 1},
+    {"type": "ID", "value": "x", "line": 1, "col": 4},
+    {"type": "OP", "value": ">=", "line": 1, "col": 6},
+    {"type": "NUM", "value": "0", "line": 1, "col": 9},
+    {"type": "EOF", "value": "", "line": 2, "col": 1}
+  ],
+  "errors": []
+}

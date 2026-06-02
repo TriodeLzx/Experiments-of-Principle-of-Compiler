@@ -1,0 +1,22 @@
+{
+  "tokens": [
+    {"type": "KEYWORD", "value": "fn", "line": 1, "col": 1},
+    {"type": "ID", "value": "foo", "line": 1, "col": 4},
+    {"type": "DELIM", "value": "(", "line": 1, "col": 7},
+    {"type": "ID", "value": "a", "line": 1, "col": 8},
+    {"type": "DELIM", "value": ":", "line": 1, "col": 9},
+    {"type": "KEYWORD", "value": "int", "line": 1, "col": 10},
+    {"type": "DELIM", "value": ",", "line": 1, "col": 13},
+    {"type": "ID", "value": "b", "line": 1, "col": 15},
+    {"type": "DELIM", "value": ":", "line": 1, "col": 16},
+    {"type": "KEYWORD", "value": "bool", "line": 1, "col": 17},
+    {"type": "DELIM", "value": ")", "line": 1, "col": 21},
+    {"type": "OP", "value": "->", "line": 1, "col": 22},
+    {"type": "KEYWORD", "value": "float", "line": 1, "col": 24},
+    {"type": "DELIM", "value": ":", "line": 1, "col": 29},
+    {"type": "KEYWORD", "value": "ret", "line": 2, "col": 5},
+    {"type": "ID", "value": "a", "line": 2, "col": 9},
+    {"type": "EOF", "value": "", "line": 3, "col": 1}
+  ],
+  "errors": []
+}

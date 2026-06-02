@@ -1,0 +1,14 @@
+{
+  "tokens": [
+    {"type": "DELIM", "value": "(", "line": 1, "col": 1},
+    {"type": "DELIM", "value": "{", "line": 2, "col": 1},
+    {"type": "DELIM", "value": "[", "line": 3, "col": 1},
+    {"type": "ID", "value": "x", "line": 4, "col": 1},
+    {"type": "DELIM", "value": "]", "line": 5, "col": 1},
+    {"type": "DELIM", "value": "}", "line": 6, "col": 1},
+    {"type": "DELIM", "value": ")", "line": 7, "col": 1},
+    {"type": "DELIM", "value": ";", "line": 8, "col": 1},
+    {"type": "EOF", "value": "", "line": 9, "col": 1}
+  ],
+  "errors": []
+}

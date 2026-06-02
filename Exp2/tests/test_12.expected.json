@@ -1,0 +1,27 @@
+{
+  "tokens": [
+    {"type": "KEYWORD", "value": "if", "line": 1, "col": 1},
+    {"type": "KEYWORD", "value": "elif", "line": 2, "col": 1},
+    {"type": "KEYWORD", "value": "else", "line": 3, "col": 1},
+    {"type": "KEYWORD", "value": "while", "line": 4, "col": 1},
+    {"type": "KEYWORD", "value": "for", "line": 5, "col": 1},
+    {"type": "KEYWORD", "value": "ret", "line": 6, "col": 1},
+    {"type": "KEYWORD", "value": "return", "line": 7, "col": 1},
+    {"type": "KEYWORD", "value": "int", "line": 8, "col": 1},
+    {"type": "KEYWORD", "value": "bool", "line": 9, "col": 1},
+    {"type": "KEYWORD", "value": "float", "line": 10, "col": 1},
+    {"type": "KEYWORD", "value": "str", "line": 11, "col": 1},
+    {"type": "KEYWORD", "value": "true", "line": 12, "col": 1},
+    {"type": "KEYWORD", "value": "false", "line": 13, "col": 1},
+    {"type": "OP", "value": "and", "line": 14, "col": 1},
+    {"type": "OP", "value": "or", "line": 15, "col": 1},
+    {"type": "OP", "value": "not", "line": 16, "col": 1},
+    {"type": "KEYWORD", "value": "fn", "line": 17, "col": 1},
+    {"type": "ID", "value": "_id", "line": 18, "col": 1},
+    {"type": "ID", "value": "id1", "line": 19, "col": 1},
+    {"type": "ID", "value": "a2b", "line": 20, "col": 1},
+    {"type": "ID", "value": "intx", "line": 21, "col": 1},
+    {"type": "EOF", "value": "", "line": 22, "col": 1}
+  ],
+  "errors": []
+}
