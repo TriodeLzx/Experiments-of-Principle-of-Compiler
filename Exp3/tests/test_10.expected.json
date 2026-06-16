@@ -1,0 +1,6 @@
+{
+  "ast": null,
+  "errors": [
+    {"type": "SYNTAX_ERROR", "expected": "end of statement", "found": "2", "line": 2, "col": 12, "message": "expected 'end of statement' before '2'"}
+  ]
+}

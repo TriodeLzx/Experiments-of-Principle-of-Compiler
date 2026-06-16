@@ -1,0 +1,8 @@
+{
+  "ast": null,
+  "errors": [
+    {"type": "LEX_ERROR", "kind": "ILLEGAL_CHAR", "found": "@", "line": 4, "col": 12, "message": "lexical error: ILLEGAL_CHAR"},
+    {"type": "SYNTAX_ERROR", "expected": "end of statement", "found": "y", "line": 4, "col": 14, "message": "expected 'end of statement' before 'y'"},
+    {"type": "SYNTAX_ERROR", "expected": ":", "found": "if", "line": 8, "col": 2, "message": "expected ':' before 'if'"}
+  ]
+}

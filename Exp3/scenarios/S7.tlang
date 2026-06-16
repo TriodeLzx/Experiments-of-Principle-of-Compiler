@@ -1,0 +1,9 @@
+fn syntax_error_case(n:int) -> int
+	int x = (n + 1
+	if x > 0
+		x = x + 1 2
+	ret x
+
+fn main() -> int:
+	int result = syntax_error_case(3)
+	ret result

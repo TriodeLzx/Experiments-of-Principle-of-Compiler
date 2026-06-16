@@ -1,0 +1,6 @@
+{
+  "ast": null,
+  "errors": [
+    {"type": "SYNTAX_ERROR", "expected": ")", "found": "ret", "line": 3, "col": 2, "message": "expected ')' before 'ret'"}
+  ]
+}

@@ -1,0 +1,19 @@
+fn array_ops_demo() -> int:
+	int[] nums = [1, 2, 3, 4, 5]
+	int i = 0
+	int sum = 0
+
+	while i < 5:
+		nums[i] = nums[i] * 2
+		sum = sum + nums[i]
+		i = i + 1
+
+	int[][] mat = [[1, 2], [3, 4]]
+	int diag = mat[0][0] + mat[1][1]
+
+	int out = sum + diag
+	ret out
+
+fn main() -> int:
+	int result = array_ops_demo()
+	ret result

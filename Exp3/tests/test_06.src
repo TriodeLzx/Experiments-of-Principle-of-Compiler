@@ -1,0 +1,6 @@
+fn main() -> int:
+	int x = 1
+	if x > 0:
+		while x < 3:
+			x = x + 1
+	ret x

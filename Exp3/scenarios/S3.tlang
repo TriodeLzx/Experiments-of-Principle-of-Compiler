@@ -1,0 +1,29 @@
+fn add_int(a:int, b:int) -> int:
+	int c = a + b
+	ret c
+
+fn type_convert_demo() -> int:
+	int n = 7
+	float f = 3.5
+	str s = "12"
+	bool flag = true
+
+	float n_to_f = float(n)
+	int f_to_i = int(f)
+	int s_to_i = int(s)
+	str n_to_s = str(n)
+	bool n_to_b = bool(n)
+
+	int sum_int = add_int(n, f_to_i)
+	float sum_float = n_to_f + f
+	bool ok = flag and (sum_int > 0)
+
+	if ok:
+		int out = int(sum_float) + s_to_i
+		ret out
+
+	ret 0
+
+fn main() -> int:
+	int result = type_convert_demo()
+	ret result
