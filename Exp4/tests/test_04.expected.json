@@ -1,0 +1,5 @@
+{
+  "errors": [
+    {"type": "REDECLARED", "line": 3, "col": 6, "symbol": "x"}
+  ]
+}

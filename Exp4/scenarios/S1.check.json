@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "fibonacci", "type": "int(int)", "scope": "global", "line": 1},
+    {"name": "n", "type": "int", "scope": "fibonacci", "line": 1},
+    {"name": "a", "type": "int", "scope": "fibonacci", "line": 5},
+    {"name": "b", "type": "int", "scope": "fibonacci", "line": 5},
+    {"name": "i", "type": "int", "scope": "fibonacci", "line": 5},
+    {"name": "next", "type": "int", "scope": "fibonacci::while@6_2_2", "line": 7},
+    {"name": "main", "type": "int()", "scope": "global", "line": 14},
+    {"name": "n", "type": "int", "scope": "main", "line": 15},
+    {"name": "result", "type": "int", "scope": "main", "line": 16}
+  ]
+}

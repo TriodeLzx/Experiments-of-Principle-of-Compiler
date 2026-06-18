@@ -1,0 +1,6 @@
+fn bad_assign() -> int:
+	int x = "abc"
+	ret x
+
+fn main() -> int:
+	ret bad_assign()

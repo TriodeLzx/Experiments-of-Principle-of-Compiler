@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {"type": "TYPE_MISMATCH", "line": 6, "col": 19, "expected": "int", "found": "str"},
+    {"type": "ARG_COUNT_MISMATCH", "line": 7, "col": 12, "symbol": "add", "expected": 2, "found": 1},
+    {"type": "ARG_TYPE_MISMATCH", "line": 8, "col": 16, "symbol": "add", "expected": "int", "found": "str"},
+    {"type": "TYPE_MISMATCH", "line": 8, "col": 12, "expected": "bool", "found": "int"},
+    {"type": "UNDECLARED", "line": 9, "col": 13, "symbol": "unknown"},
+    {"type": "TYPE_MISMATCH", "line": 11, "col": 18, "expected": "int", "found": "bool"},
+    {"type": "TYPE_MISMATCH", "line": 12, "col": 6, "expected": "int", "found": "bool"}
+  ]
+}

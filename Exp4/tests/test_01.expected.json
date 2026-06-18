@@ -1,0 +1,5 @@
+{
+  "errors": [
+    {"type": "UNDECLARED", "line": 4, "col": 6, "symbol": "y"}
+  ]
+}

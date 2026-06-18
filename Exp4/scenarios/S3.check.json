@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "add_int", "type": "int(int,int)", "scope": "global", "line": 1},
+    {"name": "a", "type": "int", "scope": "add_int", "line": 1},
+    {"name": "b", "type": "int", "scope": "add_int", "line": 1},
+    {"name": "c", "type": "int", "scope": "add_int", "line": 2},
+    {"name": "type_convert_demo", "type": "int()", "scope": "global", "line": 5},
+    {"name": "n", "type": "int", "scope": "type_convert_demo", "line": 6},
+    {"name": "f", "type": "float", "scope": "type_convert_demo", "line": 7},
+    {"name": "s", "type": "str", "scope": "type_convert_demo", "line": 8},
+    {"name": "flag", "type": "bool", "scope": "type_convert_demo", "line": 9},
+    {"name": "n_to_f", "type": "float", "scope": "type_convert_demo", "line": 11},
+    {"name": "f_to_i", "type": "int", "scope": "type_convert_demo", "line": 12},
+    {"name": "s_to_i", "type": "int", "scope": "type_convert_demo", "line": 13},
+    {"name": "n_to_s", "type": "str", "scope": "type_convert_demo", "line": 14},
+    {"name": "n_to_b", "type": "bool", "scope": "type_convert_demo", "line": 15},
+    {"name": "sum_int", "type": "int", "scope": "type_convert_demo", "line": 17},
+    {"name": "sum_float", "type": "float", "scope": "type_convert_demo", "line": 18},
+    {"name": "ok", "type": "bool", "scope": "type_convert_demo", "line": 19},
+    {"name": "out", "type": "int", "scope": "type_convert_demo::if@21_2_1", "line": 22},
+    {"name": "main", "type": "int()", "scope": "global", "line": 27},
+    {"name": "result", "type": "int", "scope": "main", "line": 28}
+  ]
+}

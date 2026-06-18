@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "add", "type": "int(int,int)", "scope": "global", "line": 1},
+    {"name": "a", "type": "int", "scope": "add", "line": 1},
+    {"name": "b", "type": "int", "scope": "add", "line": 1},
+    {"name": "c", "type": "int", "scope": "add", "line": 2},
+    {"name": "main", "type": "int()", "scope": "global", "line": 5},
+    {"name": "x", "type": "int", "scope": "main", "line": 6}
+  ]
+}

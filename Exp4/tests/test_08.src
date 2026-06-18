@@ -1,0 +1,8 @@
+fn negate(flag:bool) -> int:
+	if flag:
+		ret 1
+	ret 0
+
+fn main() -> int:
+	int x = negate(1)
+	ret x

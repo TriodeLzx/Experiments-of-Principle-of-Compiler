@@ -1,0 +1,17 @@
+fn fibonacci(n:int) -> int:
+	if n <= 1:
+		ret n
+
+	int a = 0, b = 1, i = 2
+	while i <= n:
+		int next = a + b
+		a = b
+		b = next
+		i = i + 1
+
+	ret b
+
+fn main() -> int:
+	int n = 10
+	int result = fibonacci(n)
+	ret result

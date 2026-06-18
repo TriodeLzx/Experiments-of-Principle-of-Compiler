@@ -1,0 +1,7 @@
+fn bad_ops() -> int:
+	bool flag = true
+	int x = flag + 1
+	ret flag
+
+fn main() -> int:
+	ret 0

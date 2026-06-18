@@ -1,0 +1,5 @@
+{
+  "errors": [
+    {"type": "ARG_COUNT_MISMATCH", "line": 5, "col": 10, "symbol": "add", "expected": 2, "found": 1}
+  ]
+}

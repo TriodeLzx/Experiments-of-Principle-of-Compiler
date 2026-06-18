@@ -1,0 +1,7 @@
+fn add(a:int, b:int) -> int:
+	int c = a + b
+	ret c
+
+fn main() -> int:
+	int x = add(1, 2)
+	ret x

@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "array_sum", "type": "int()", "scope": "global", "line": 1},
+    {"name": "nums", "type": "int[]", "scope": "array_sum", "line": 2},
+    {"name": "total", "type": "int", "scope": "array_sum", "line": 3},
+    {"name": "main", "type": "int()", "scope": "global", "line": 6}
+  ]
+}

@@ -1,0 +1,7 @@
+fn block_scope_error(n:int) -> int:
+	if n > 0:
+		int y = n
+	ret y
+
+fn main() -> int:
+	ret block_scope_error(1)

@@ -1,0 +1,15 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "nested_control_demo", "type": "int(int)", "scope": "global", "line": 1},
+    {"name": "limit", "type": "int", "scope": "nested_control_demo", "line": 1},
+    {"name": "total", "type": "int", "scope": "nested_control_demo", "line": 2},
+    {"name": "i", "type": "int", "scope": "nested_control_demo", "line": 3},
+    {"name": "j", "type": "int", "scope": "nested_control_demo::if@6_3_2", "line": 7},
+    {"name": "k", "type": "int", "scope": "nested_control_demo::if@9_5_4", "line": 10},
+    {"name": "t", "type": "int", "scope": "nested_control_demo::for@15_6_7", "line": 15},
+    {"name": "m", "type": "int", "scope": "nested_control_demo::for@19_4_9", "line": 19},
+    {"name": "main", "type": "int()", "scope": "global", "line": 27},
+    {"name": "answer", "type": "int", "scope": "main", "line": 28}
+  ]
+}

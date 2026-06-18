@@ -1,0 +1,6 @@
+{
+  "errors": [
+    {"type": "TYPE_MISMATCH", "line": 3, "col": 10, "expected": "numeric", "found": "bool"},
+    {"type": "TYPE_MISMATCH", "line": 4, "col": 6, "expected": "int", "found": "bool"}
+  ]
+}

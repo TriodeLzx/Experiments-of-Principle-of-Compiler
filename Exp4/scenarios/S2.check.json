@@ -1,0 +1,15 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "scope_shadow_demo", "type": "int(int)", "scope": "global", "line": 1},
+    {"name": "n", "type": "int", "scope": "scope_shadow_demo", "line": 1},
+    {"name": "x", "type": "int", "scope": "scope_shadow_demo", "line": 2},
+    {"name": "y", "type": "int", "scope": "scope_shadow_demo", "line": 3},
+    {"name": "x", "type": "int", "scope": "scope_shadow_demo::if@5_2_1", "line": 6},
+    {"name": "x", "type": "int", "scope": "scope_shadow_demo::while@9_3_2", "line": 10},
+    {"name": "out", "type": "int", "scope": "scope_shadow_demo", "line": 13},
+    {"name": "main", "type": "int()", "scope": "global", "line": 16},
+    {"name": "input", "type": "int", "scope": "main", "line": 17},
+    {"name": "result", "type": "int", "scope": "main", "line": 18}
+  ]
+}

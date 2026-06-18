@@ -1,0 +1,7 @@
+fn array_sum() -> int:
+	int[] nums = [1, 2, 3]
+	int total = nums[0] + nums[1] + nums[2]
+	ret total
+
+fn main() -> int:
+	ret array_sum()

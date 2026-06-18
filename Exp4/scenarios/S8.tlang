@@ -1,0 +1,16 @@
+fn add(a:int, b:int) -> int:
+	ret a + b
+
+fn semantic_error_showcase(n:int) -> int:
+	int base = n
+	int bad_assign = "oops"
+	int sum = add(base)
+	bool ok = add("1", 2)
+	int miss = unknown + 1
+	int[] nums = [1, 2, 3]
+	int pick = nums[true]
+	ret ok
+
+fn main() -> int:
+	int result = semantic_error_showcase(3)
+	ret result

@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "symbols": [
+    {"name": "array_ops_demo", "type": "int()", "scope": "global", "line": 1},
+    {"name": "nums", "type": "int[]", "scope": "array_ops_demo", "line": 2},
+    {"name": "i", "type": "int", "scope": "array_ops_demo", "line": 3},
+    {"name": "sum", "type": "int", "scope": "array_ops_demo", "line": 4},
+    {"name": "mat", "type": "int[][]", "scope": "array_ops_demo", "line": 11},
+    {"name": "diag", "type": "int", "scope": "array_ops_demo", "line": 12},
+    {"name": "out", "type": "int", "scope": "array_ops_demo", "line": 14},
+    {"name": "main", "type": "int()", "scope": "global", "line": 17},
+    {"name": "result", "type": "int", "scope": "main", "line": 18}
+  ]
+}

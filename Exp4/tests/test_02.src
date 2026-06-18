@@ -1,0 +1,9 @@
+fn shadow_type_error(n:int) -> int:
+	int x = n
+	if x > 0:
+		bool x = true
+		int z = x + 1
+	ret n
+
+fn main() -> int:
+	ret shadow_type_error(3)
