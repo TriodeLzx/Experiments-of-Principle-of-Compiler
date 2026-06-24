@@ -1,0 +1,27 @@
+func fibonacci(n__1:int) -> int
+  __t1 = n__1 <= 1
+  if_false __t1 goto if_end_1
+  ret n__1
+if_end_1:
+  a__2 = 0
+  b__3 = 1
+  i__4 = 2
+while_begin_2:
+  __t2 = i__4 <= n__1
+  if_false __t2 goto while_end_3
+  __t3 = a__2 + b__3
+  next__5 = __t3
+  a__2 = b__3
+  b__3 = next__5
+  __t4 = i__4 + 1
+  i__4 = __t4
+  goto while_begin_2
+while_end_3:
+  ret b__3
+endfunc
+
+func main() -> int
+  __t5 = call fibonacci(10)
+  result__7 = __t5
+  ret result__7
+endfunc

@@ -1,0 +1,7 @@
+fn pair_sum(a:int, b:int) -> int:
+	int x = a + b
+	int y = a + b
+	ret x + y
+
+fn main() -> int:
+	ret pair_sum(2, 3)

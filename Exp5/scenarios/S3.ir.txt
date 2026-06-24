@@ -1,0 +1,42 @@
+func add_int(a__1:int, b__2:int) -> int
+  __t1 = a__1 + b__2
+  c__3 = __t1
+  ret c__3
+endfunc
+
+func type_convert_demo() -> int
+  n__4 = 7
+  f__5 = 3.5
+  s__6 = "12"
+  flag__7 = true
+  __t2 = call float(n__4)
+  n_to_f__8 = __t2
+  __t3 = call int(f__5)
+  f_to_i__9 = __t3
+  __t4 = call int(s__6)
+  s_to_i__10 = __t4
+  __t5 = call str(n__4)
+  n_to_s__11 = __t5
+  __t6 = call bool(n__4)
+  n_to_b__12 = __t6
+  __t7 = call add_int(n__4, f_to_i__9)
+  sum_int__13 = __t7
+  __t8 = n_to_f__8 + f__5
+  sum_float__14 = __t8
+  __t10 = sum_int__13 > 0
+  __t9 = flag__7 and __t10
+  ok__15 = __t9
+  if_false ok__15 goto if_end_1
+  __t12 = call int(sum_float__14)
+  __t11 = __t12 + s_to_i__10
+  out__16 = __t11
+  ret out__16
+if_end_1:
+  ret 0
+endfunc
+
+func main() -> int
+  __t13 = call type_convert_demo()
+  result__17 = __t13
+  ret result__17
+endfunc

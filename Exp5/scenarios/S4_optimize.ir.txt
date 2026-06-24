@@ -1,0 +1,73 @@
+func nested_control_demo(limit__1:int) -> int
+  total__2 = 0
+  i__3 = 0
+while_begin_1:
+  __t1 = i__3 < limit__1
+  if_false __t1 goto while_end_2
+  __t3 = i__3 % 2
+  __t2 = __t3 == 0
+  if_false __t2 goto if_else_4
+  j__4 = 0
+while_begin_5:
+  __t5 = i__3 + 1
+  __t4 = j__4 < __t5
+  if_false __t4 goto while_end_6
+  __t6 = j__4 == 2
+  if_false __t6 goto if_else_8
+  k__5 = 0
+while_begin_9:
+  __t7 = k__5 < 3
+  if_false __t7 goto while_end_10
+  __t10 = total__2 + i__3
+  __t9 = __t10 + j__4
+  __t8 = __t9 + k__5
+  total__2 = __t8
+  __t11 = k__5 + 1
+  k__5 = __t11
+  goto while_begin_9
+while_end_10:
+  goto if_end_7
+if_else_8:
+  t__6 = 0
+for_check_11:
+  __t13 = t__6 < 3
+  if_false __t13 goto for_end_14
+  __t15 = total__2 + t__6
+  total__2 = __t15
+  __t16 = t__6 + 1
+  t__6 = __t16
+  goto for_check_11
+for_end_14:
+if_end_7:
+  __t17 = j__4 + 1
+  j__4 = __t17
+  goto while_begin_5
+while_end_6:
+  goto if_end_3
+if_else_4:
+  m__7 = 0
+for_check_15:
+  __t19 = m__7 < i__3
+  if_false __t19 goto for_end_18
+  __t21 = m__7 > 1
+  if_false __t21 goto if_end_19
+  __t22 = total__2 + m__7
+  total__2 = __t22
+if_end_19:
+  __t23 = m__7 + 1
+  m__7 = __t23
+  goto for_check_15
+for_end_18:
+if_end_3:
+  __t24 = i__3 + 1
+  i__3 = __t24
+  goto while_begin_1
+while_end_2:
+  ret total__2
+endfunc
+
+func main() -> int
+  __t25 = call nested_control_demo(6)
+  answer__8 = __t25
+  ret answer__8
+endfunc

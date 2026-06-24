@@ -1,0 +1,28 @@
+func scope_shadow_demo(n__1:int) -> int
+  x__2 = n__1
+  y__3 = 0
+  __t1 = x__2 > 0
+  if_false __t1 goto if_end_1
+  __t2 = x__2 + 10
+  x__4 = __t2
+  y__3 = x__4
+while_begin_2:
+  __t3 = y__3 < 40
+  if_false __t3 goto while_end_3
+  __t4 = y__3 + 1
+  x__5 = __t4
+  __t5 = x__5 + 5
+  y__3 = __t5
+  goto while_begin_2
+while_end_3:
+if_end_1:
+  __t6 = x__2 + y__3
+  out__6 = __t6
+  ret out__6
+endfunc
+
+func main() -> int
+  __t7 = call scope_shadow_demo(5)
+  result__8 = __t7
+  ret result__8
+endfunc

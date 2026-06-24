@@ -1,0 +1,13 @@
+func pair_sum(a__1:int, b__2:int) -> int
+  __t1 = a__1 + b__2
+  x__3 = __t1
+  __t2 = __t1
+  y__4 = __t2
+  __t3 = x__3 + y__4
+  ret __t3
+endfunc
+
+func main() -> int
+  __t4 = call pair_sum(2, 3)
+  ret __t4
+endfunc

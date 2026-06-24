@@ -1,0 +1,6 @@
+fn main() -> int:
+	int a = 2 + 3 * 4
+	int b = a + 0
+	int c = b * 1
+	int dead = 123
+	ret c

@@ -1,0 +1,3 @@
+func main() -> int
+  ret 14
+endfunc
